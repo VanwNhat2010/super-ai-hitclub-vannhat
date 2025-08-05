@@ -1,0 +1,15 @@
+{
+  "name": "taixiu-predict-api",
+  "version": "1.0.0",
+  "description": "API for Tai Xiu prediction using custom AI algorithm",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "axios": "^1.7.2"
+  },
+  "author": "Tele@CsTool001",
+  "license": "ISC"
+}
