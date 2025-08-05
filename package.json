@@ -1,7 +1,7 @@
 {
-  "name": "taixiu-predict-api",
+  "name": "super-ai-hitclub-vannhat",
   "version": "1.0.0",
-  "description": "API for Tai Xiu prediction using custom AI algorithm",
+  "description": "API for Tai Xiu prediction using custom AI algorithm by vannhat",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
