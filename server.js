@@ -465,12 +465,12 @@ app.get('/api/taixiu-predict', async (req, res) => {
         // 3. Chuẩn bị phản hồi theo định dạng mong muốn
         const responseData = {
             phien_truoc: lastSessionData.Phien,
-            xuc_xac: `[ ${lastSessionData.xuc_xac.join(' - ')} ]`,
+            xuc_xac: `[${lastSessionData.Xuc_xac[0]},${lastSessionData.Xuc_xac[1]},${lastSessionData.Xuc_xac[2]}]`,
             tong: lastSessionData.Tong,
             ket_qua: lastSessionData.Ket_qua,
             phien_sau: lastSessionData.Phien + 1,
-            du_doan: predictionResult,
-            do_tin_cay: `${(confidence * 100).toFixed(2)}%`,
+            du_doan: prediction,
+            do_tin_cay: (confidence * 100).toFixed(2),
             giai_thich: reason,
             id: 'Tele@CsTool001'
         };
